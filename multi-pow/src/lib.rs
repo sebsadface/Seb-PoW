@@ -245,7 +245,7 @@ where
         if parent_number > fork_height {
             match seal.work.algo {
                 SupportedHashes::Md5 => {return Ok(false)},
-                SupportedHashes::Sha3 => (),
+                SupportedHashes::Sha3 => {(return Ok(false)},
                 SupportedHashes::Keccak => (),
             }
         }
